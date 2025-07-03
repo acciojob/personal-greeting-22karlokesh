@@ -24,7 +24,7 @@ const App = () => {
       />
       {name && (
         <h2 style={{ marginTop: "20px", fontSize: "24px" }}>
-          Hello, {name}!
+          Hello {name}!
         </h2>
       )}
     </div>
