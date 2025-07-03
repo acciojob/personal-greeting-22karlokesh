@@ -3,8 +3,12 @@ import React from "react";
 import './../styles/App.css';
 
 const App = () => {
+  const [name, setName] = useState('');  // <-- declare state here ( My Code )
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial" }}>
+    // <div>
+    //     {/* Do not remove the main div */}
+    // </div>
+   <div style={{ padding: "20px", fontFamily: "Arial" }}>
       <label htmlFor="nameInput" style={{ display: "block", marginBottom: "8px", fontSize: "20px" }}>
         Enter your name:
       </label>
