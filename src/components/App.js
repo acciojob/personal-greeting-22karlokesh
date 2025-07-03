@@ -1,14 +1,11 @@
-
-import React from "react";
+import React, { useState } from "react";
 import './../styles/App.css';
 
 const App = () => {
-  const [name, setName] = useState('');  // <-- declare state here ( My Code )
+  const [name, setName] = useState('');
+
   return (
-    // <div>
-    //     {/* Do not remove the main div */}
-    // </div>
-   <div style={{ padding: "20px", fontFamily: "Arial" }}>
+    <div style={{ padding: "20px", fontFamily: "Arial" }}>
       <label htmlFor="nameInput" style={{ display: "block", marginBottom: "8px", fontSize: "20px" }}>
         Enter your name:
       </label>
@@ -27,11 +24,11 @@ const App = () => {
       />
       {name && (
         <h2 style={{ marginTop: "20px", fontSize: "24px" }}>
-          Hello {name}!
+          Hello, {name}!
         </h2>
       )}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
